@@ -63,6 +63,30 @@
   <div class="box" id="div6"></div>
 </section>
 
+<script src="lib/jquery-3.7.1.min.js"></script>
+<script>
+
+  var array = ["#fc97f6","#c156e8","#f53131","#2a822b","#4c63d4","#e9f022"];
+
+  function replaceValues() {
+
+    let lastValue = array.pop();
+    array.unshift(lastValue);
+
+    $("#div1").css('background-color',array[0]);
+    $("#div2").css('background-color',array[1]);
+    $("#div3").css('background-color',array[2]);
+    $("#div4").css('background-color',array[3]);
+    $("#div5").css('background-color',array[4]);
+    $("#div6").css('background-color',array[5]);
+  }
+
+  setInterval(replaceValues, 800);
+
+
+</script>
+
+
 
 </body>
 </html>
