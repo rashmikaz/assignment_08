@@ -2,7 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>case01</title>
+
+    <style>
+        section{
+            background: #e8eded;
+            margin: 50px;
+            padding: 50px;
+            position: relative;
+            text-align: center;
+            color: crimson;
+            font-size: 30px;
+            font-family: sans-serif;
+
+        }
+        #boxes {
+            display: flex;
+            /*justify-content: center;*/
+        }
+        #boxes>div {
+            width: 120px;
+            aspect-ratio: 1/1;
+            font-size: 30px;
+            color: red;
+
+            display: flex;
+
+            background-image: url("assets/img/man.gif");
+            background-position: center;
+            background-size: cover;
+        }
+        #boxes>div>div {
+            width: fit-content;
+            height: fit-content;
+
+        }
+        #house{
+            width: 250px;
+            height: 210px;
+            background-image: url("assets/img/giphy.gif");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            right: 60px;
+            top: 100px;
+        }
+
+
+    </style>
 </head>
 <body>
 <section>
